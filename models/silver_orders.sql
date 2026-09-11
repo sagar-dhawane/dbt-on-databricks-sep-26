@@ -1,0 +1,10 @@
+select
+id,
+date(date_format(created_at,'yyyy-MM-dd')) as creation_date,
+user_id,
+product_id,
+quantity,
+unit_price,
+quantity*unit_price as Total_Order_Price
+from
+{{ ref('bronze_orders')}}
