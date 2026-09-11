@@ -1,0 +1,9 @@
+sources:
+  - name: data_sources
+    database: dbt_project_sept_2026
+    schema: landing
+    tables:
+      - name: orders
+      - name: reviews
+      - name: products
+      - name: users
