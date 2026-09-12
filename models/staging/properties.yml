@@ -1,0 +1,20 @@
+models:
+- name: bronze_products
+  columns:
+    - name: category
+      data_tests:
+        - accepted_values:
+            arguments: 
+              values: ['Gadget','Doohickey','Gizmo','Widget']
+              config: 
+                severity: warn
+    
+    - name: id 
+      data_tests:
+        - relationships:
+            arguments: 
+              to: ref('bronze_orders')
+              field: product_id
+            config: 
+              severity: warn
+              
