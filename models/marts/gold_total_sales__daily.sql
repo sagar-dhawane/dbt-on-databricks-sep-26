@@ -1,3 +1,11 @@
+{{
+    config(
+        materialized='table',
+        schema='gold'
+    )
+}}
+
+
 select 
 o.order_date,
 p.product_name,

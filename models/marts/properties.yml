@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: gold_avg_product_ratings__daily
+    config:
+      materialized: table
+      schema: gold
