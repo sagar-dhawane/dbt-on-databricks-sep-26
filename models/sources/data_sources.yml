@@ -57,3 +57,5 @@ sources:
               - not_null:
                   config:
                     severity: warn
+      - name: orders_incremental
+      
